@@ -1,12 +1,19 @@
 void setup() {
   // put your setup code here, to run once:
-pinMode(13,OUTPUT);
 }
-
 void loop() {
   // put your main code here, to run repeatedly:
-digitalWrite(13,HIGH);
-delay(1000);
-digitalWrite(13,LOW);
-delay(1000);
+int x;
+x=digitalRead(10);
+if(x=HIGH)
+{
+  digitalWrite(13,HIGH);
+  delay(250);
+  digitalWrite(13,LOW);
+  delay(250);
+  digitalWrite(13,HIGH);
+  delay(50);
+  digitalWrite(13,LOW);
+  delay(50);
+}
 }
